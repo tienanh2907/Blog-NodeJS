@@ -1,42 +1,52 @@
-@import "variables";
+@import 'variables';
+@import 'post';
 
 .card-item {
-  margin-top: 2rem;
-  min-height: 432px;
-  height: 432px;
+    margin-top: 2rem;
+    min-height: 432px;
+    height: 432px;
 }
 
 .card-img-top {
-  min-height: 205px;
-  height: 205px;
+    min-height: 205px;
+    height: 205px;
 }
 
 .user-avatar {
-  width: 28px;
-  height: 28px;
-  border-radius: 50%;
-  background-color: #fff;
-  margin-right: 4px;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin-right: 4px;
 }
+
+.card-body{
+  height: 225px;
+  .card-text{
+    height: 95px;
+    overflow: hidden;
+  }
+}
+
 
 .trash-icon {
-  float: right;
-  text-decoration: none;
+    float: right;
+    text-decoration: none;
+
+    img {
+        width: 30px;
+        height: 30px;
+        padding: 4px;
+        margin: 4px;
+
+        &:hover {
+            background-color: #5af;
+            border-radius: 4px;
+        }
+    }
 }
 
-.trash-icon img {
-  width: 30px;
-  height: 30px;
-  padding: 4px;
-  margin: 4px;
-}
-
-.trash-icon img:hover {
-  background-color: #5af;
-  border-radius: 4px;
-}
-
-.checkbox-select-options{
-  width: 180px;
-  margin: 0 12px;
+.checkbox-select-options {
+    width: 180px;
+    margin: 0 12px;
 }
